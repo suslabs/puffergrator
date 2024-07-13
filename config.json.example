@@ -1,0 +1,15 @@
+{
+    "pufferpanel": {
+        "host": "",
+        "protocol": "",
+        "serverid": "",
+
+        "email": "",
+        "password": ""
+    },
+    "discord": {
+        "bot_token": "",
+        "chat_channel": "",
+        "console_channel": ""
+    }
+}
