@@ -10,6 +10,9 @@ export default async function(Config, Token, Socket, DiscordBot) {
     Socket.on('message', async (data) => {
         const Data = data.toString('utf8');
         const Json = JSON.parse(Data);
+
+        if (!Json.data.logs || !Json.data.logs[0]) return;
+
         const Log = Json.data.logs[0];
         const Parsed = Functions.parseLog(Log);
 
